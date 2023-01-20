@@ -2,6 +2,9 @@ InString = input("Please type in a word: ")
 InWord = input("Please type in a character: ")
 
 IndexLoc = InString.find(InWord)
-print(InString[IndexLoc:3])
+IndexLoc = InString[IndexLoc:]
+if len(IndexLoc[:3]) == 3:
+    print(IndexLoc[:3])
 
-#pull request test
+#Programming exercise:
+#Find the first substring
